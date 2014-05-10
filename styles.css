@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-perspective: 500px;
 }
 
-.topkat {
+.animating {
 
  -webkit-animation-name: anime;
  -webkit-animation-duration: 4s;
@@ -33,6 +33,17 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: linear;
   -webkit-transform-style: preserve-3d;
 }
+
+.animating90 {
+
+ -webkit-animation-name: rotate90;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-fill-mode: both;
+ -webkit-animation-direction: forwards;
+  -webkit-transform-style: preserve-3d;
+}
+
 
 @-webkit-keyframes anime {
 
@@ -43,6 +54,17 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotateY(360deg);
   }
 }
+
+@-webkit-keyframes rotate90 {
+
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+  }
+}
+
 
 /*
 
