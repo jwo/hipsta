@@ -20,3 +20,33 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lobster', cursive !important;
 }
+
+.top {
+  -webkit-perspective: 500px;
+}
+
+.topkat {
+
+ -webkit-animation-name: anime;
+ -webkit-animation-duration: 4s;
+ -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-transform-style: preserve-3d;
+}
+
+@-webkit-keyframes anime {
+
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+/*
+
+1) Create @keyframe anime
+2) apply to kat
+
+*/
